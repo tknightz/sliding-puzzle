@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sliding Puzzle - Tknightz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div id="info">
+        <img id="sample-img" />
+        <div id="game-score">
+          <div id="move-info" class="flex-display">
+            <p>Moves</p>
+            <span id="moves">10</span>
+          </div>
+          <div id="score-history" class="flex-display">
+            <p>History</p>
+          </div>
+        </div>
+      </div>
+      <div id="my-brand">
+        <h1>Sliding Puzzle</h1>
+        <span>Made with ❤️ by Tknightz</span>
+        <div id="controller">
+          <button id="reset-btn">Reset</button>
+          <input id="upload-btn" value="Update" accept="image/png, image/jpeg" type="file" style="display:none;" />
+          <button id="hijack-upload-btn">Upload Sample</button>
+          <select id="level">
+            <option value="3" selected>Easy</option>
+            <option value="5">Medium</option>
+            <option value="8">Hard</option>
+          </select>
+        </div>
+      </div>
+      <div id="game-container">
+        <div id="pieces"></div>
+        <div id="banner-win">
+          <div id="banner">
+            <h1>You win!!!</h1>
+            <button onClick="newGame()">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
