@@ -1,13 +1,25 @@
-# Slide puzzle
-This game took me 1–2 hours to design and come up with the algorithm. I did play this game before, but I didn't know it were made and the algorithm behind. 
-The algorithm I implemented in this source code came from my idea, and I didn't search for it or see any other references,
-so I am not 100% sure that my solution was correct (there are some cases that I can't solve the puzzle, but I am not a good player in this game, so I cannot tell whether is the algorithm right or not?)
+# Sliding Puzzle
 
-The operations of this game are simple:
-1. Slicing original image to a bunch of small pieces (9, 25, 64 pieces...)
-2. Shuffle the pieces
-3. Check if the pieces are in order (game over)
+This is a sliding puzzle game I built in [1-2 hours](time to design and code algorithm). While I'd played this game before, I never knew about the solving algorithm! 
 
-Shuffled pieces were represented as an array, the game is over when the array is sorted.
+The algorithm I implemented in this code is entirely my own design. I didn't search for existing solutions or reference any other code. As a result, I can't guarantee it's perfect - there are some cases where the puzzle remains unsolved.  However, since I'm not a master of the game myself, it's difficult to say definitively if it's the algorithm or my own playing skills! 
 
-The final version took me 3–4 hours to finish (most of the time writing CSS and thinking about the front-end design) : https://tknightz.github.io/sliding-puzzle/
+**The Game:**
+
+The game mechanics are simple:
+
+1. **Slice the Image:** Your chosen image is cut into a grid of squares (e.g., 3x3, 5x5, 8x8 pieces).
+2. **Shuffle the Pieces:** The squares are then shuffled, scrambling the image.
+3. **Solve the Puzzle:** Rearrange the squares back into the original image. 
+
+**Implementation:**
+
+Internally, the shuffled pieces are represented by an array. The game is won when the array is sorted in the correct order.
+
+**The Final Touches:**
+
+While the core functionality came together quickly, the final touches (mostly involving CSS and front-end design) took an additional [3-4 hours] to complete.
+
+**Ready to Play?**
+
+Check out the live demo here: [https://tknightz.github.io/sliding-puzzle/](https://tknightz.github.io/sliding-puzzle/)
